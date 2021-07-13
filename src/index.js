@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './pages/Home';
+import Home from './pages/home';
 
 
 
 ReactDOM.render(
-
-  <App />,
-
+  <>
+    <Home />
+  </>,
   document.getElementById('root')
 );
 

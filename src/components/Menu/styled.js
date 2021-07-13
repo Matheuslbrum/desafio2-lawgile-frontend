@@ -10,6 +10,7 @@ export const Header = styled.header`
 display:flex;
 background-color:#1DB8A6;
 width: 70vw;
+
 justify-content: space-between;
 `;
 export const BoxLogo = styled.div`
