@@ -1,5 +1,6 @@
 import React from 'react';
 import * as S from './styled';
+import Login from '../../icons/login.svg';
 
 function Header() {
     return (
@@ -10,22 +11,11 @@ function Header() {
                 </S.BoxLogo>
                 <S.BoxList>
                     <S.List>
-                        <S.Item><S.Link>Carrinho</S.Link></S.Item>
-                        <S.Item><S.Link>Login</S.Link></S.Item>
-                        <S.Item><S.Link>Histórico</S.Link></S.Item>
+                        <S.Item><S.Link><img height={35} src={Login} /></S.Link></S.Item>
                     </S.List>
                 </S.BoxList>
 
             </S.Header>
-            <S.Sections>
-                <S.BoxListInfo>
-                    <S.ListIntern>
-                        <S.ItemList><S.Link>Produtos</S.Link></S.ItemList>
-                        <S.ItemList><S.Link>Contato</S.Link></S.ItemList>
-                        <S.ItemList><S.Link>Sobre</S.Link></S.ItemList>
-                    </S.ListIntern>
-                </S.BoxListInfo>
-            </S.Sections>
         </S.Principle>
 
     );
