@@ -1,6 +1,5 @@
 import React from 'react';
 import * as S from './styled';
-import Login from '../../icons/login.svg';
 
 function Header() {
     return (
@@ -11,7 +10,7 @@ function Header() {
                 </S.BoxLogo>
                 <S.BoxList>
                     <S.List>
-                        <S.Item><S.Link><img height={35} src={Login} /></S.Link></S.Item>
+                        <S.Item></S.Item>
                     </S.List>
                 </S.BoxList>
 

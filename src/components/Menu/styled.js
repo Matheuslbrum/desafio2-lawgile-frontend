@@ -7,7 +7,7 @@ flex-wrap: wrap;
 `;
 export const Header = styled.header`
 display:flex;
-background-color:#1DB8A6;
+background-color:#A6635D;
 width: 100%;
 height:10vh;
 `;

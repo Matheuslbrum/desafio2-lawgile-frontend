@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Conteiner = styled.div`
 width:100%;
 height:100vh;
-background:Yellow;
+background:#23468C;
 `;
 export const Main = styled.main`
 height: 85vh;
