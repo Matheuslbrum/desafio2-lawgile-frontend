@@ -3,8 +3,10 @@ import Footer from '../Footer';
 import Header from '../Menu';
 import * as S from './style';
 
+
 const Layout = (props) => {
     return (
+
         <S.Conteiner>
             <Header />
             <S.Main>
@@ -12,6 +14,7 @@ const Layout = (props) => {
             </S.Main>
             <Footer />
         </S.Conteiner>
+
 
     );
 }

@@ -7,7 +7,7 @@ justify-content: center;
 align-items: flex-end;
 `;
 export const Footer = styled.footer`
-background-color:#A6635D;
+background-color:black;
 width: 100%;
 height:5vh;
 display: flex;

@@ -6,6 +6,7 @@ margin:0 auto;
 height:100%;
 display:flex;
 justify-content: flex-end;
+background: #2e2e2e
 `;
 export const BoxForms = styled.div`
 width: 35%;
@@ -23,6 +24,7 @@ display:flex;
 align-items:center;
 justify-content: center;
 flex-direction: column;
+border-width: 15px;
 
 `;
 export const BoxPostits = styled.div`
@@ -39,11 +41,10 @@ height:15vw;
 background:black;
 `;
 export const FormsLabel = styled.label`
-color:black;
+color: yellow;
 font-size:30px;
 `;
 export const FormsInput = styled.input`
-
 border:none;
 border:solid 1px;
 border-radius:5px;
