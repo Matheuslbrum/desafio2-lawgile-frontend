@@ -1,17 +1,14 @@
 import styled from 'styled-components';
 
-export const Principle = styled.body`
- 
-display: flex;
-justify-content: center;
-align-items: flex-end;
-`;
 export const Footer = styled.footer`
 background-color:black;
 width: 100%;
-height:5vh;
+height:6vh;
 display: flex;
 justify-content: center;
+@media(max-width:768px){
+    height:12vh;
+}
 `;
 export const BoxList = styled.nav`
 width:100%;
@@ -27,5 +24,16 @@ align-items: center;
 `;
 export const Item = styled.li`
 margin:15px;
+width:2.5%;
+@media(max-width:768px){
+    width:5%;
+}
 `;
-export const Link = styled.a``;
+export const Link = styled.a`
+width:100%;
+`;
+export const Image = styled.img`
+width:100%;
+
+`;
+

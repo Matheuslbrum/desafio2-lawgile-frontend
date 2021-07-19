@@ -4,7 +4,7 @@ import { onError } from "@apollo/client/link/error";
 
 
 const httpLink = new HttpLink({
-    uri: "https://0790c8g7t9.execute-api.sa-east-1.amazonaws.com/dev/"
+    uri: "https://6pmxnwpaea.execute-api.sa-east-1.amazonaws.com/prod/"
 });
 
 const errorLink = onError(({ graphQLErrors, networkError }) => {
@@ -21,5 +21,8 @@ const errorLink = onError(({ graphQLErrors, networkError }) => {
 
 export const client = new ApolloClient({
     link: from([errorLink, httpLink]),
-    cache: new InMemoryCache()
+    cache: new InMemoryCache(),
+    headers: {
+
+    }
 });

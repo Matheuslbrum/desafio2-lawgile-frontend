@@ -7,5 +7,6 @@ height:100vh;
 background:#23468C;
 `;
 export const Main = styled.main`
-height: 85vh;
+min-height: 84vh;
+
 `;
