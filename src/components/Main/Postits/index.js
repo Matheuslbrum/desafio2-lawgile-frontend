@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import { useUsuariosContext } from '../../../context/UsuariosContext';
 import * as S from './style';
+import Rosa from "../../../icons/fotos/rosa-2.png";
+import Azul from "../../../icons/fotos/azul-2.png";
+import Verde from "../../../icons/fotos/verde-2.png";
+
+
 
 const valorInicial = { nome: '', email: '', produtos: '' };
 
@@ -36,9 +41,18 @@ export default function Main() {
                     </S.Text>
                 </S.BoxText>
                 <S.BoxPostits>
-                    <S.Postits></S.Postits>
-                    <S.Postits></S.Postits>
-                    <S.Postits></S.Postits>
+                    <S.Postits  >
+                        <S.Image src={Rosa} alt="Post-it rosa" />
+                        <S.Info cor="#ff3d83">Post-it de código: PTrosa </S.Info>
+                    </S.Postits>
+                    <S.Postits  >
+                        <S.Image src={Verde} alt="Post-it verde" />
+                        <S.Info cor="#00b566">Post-it de código: PTverde</S.Info>
+                    </S.Postits>
+                    <S.Postits >
+                        <S.Image src={Azul} alt="Post-it azul" />
+                        <S.Info cor="#a8c5e3">Post-it de código: PTazul</S.Info>
+                    </S.Postits>
                 </S.BoxPostits>
             </S.BoxTpostit>
             <S.BoxForms>
@@ -69,7 +83,7 @@ export default function Main() {
                         </S.FormsLabel>
 
                         <S.FormsLabel>
-                            Digite o código do post-it
+                            Digite o código do prod
                             <S.FormsInput
                                 type="text"
                                 onChange={handleInput}

@@ -59,11 +59,38 @@ justify-content: center;
     margin:5rem 0;
 }
 `;
+export const Info = styled.h4`
+color: black;
+position:absolute;
+    top:0;
+    left:0;
+    transform: translate(0, 100%);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    background: ${props => props.cor};
+    width:100%;
+    height:100%;
+    transition: 1s;
+@media(max-width:1291px){
+    font-size: 1.5rem;
+}
+`;
 export const Postits = styled.div`
 margin: 10px;
+position:relative;
 width:15vw;
 height:15vw;
-background:black;
+box-shadow:0 0 20px rgba(0,0,0,0.5);
+display:flex;
+justify-content: center;
+align-items: center;
+overflow:hidden;
+&:hover ${Info}{
+    transform: translate(0,0);
+
+}
 @media(max-width:768px){
     width:50vw;
     height:60vw;
@@ -113,4 +140,9 @@ color: black;
 font-size:30px;
 font-weight: bold;
 `;
+
+export const Image = styled.img`
+width:100%;
+`;
+
 
