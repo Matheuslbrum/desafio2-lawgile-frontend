@@ -26,8 +26,8 @@ align-items:center;
 export const Forms = styled.form`
 width:30vw;
 height:50vh;
-/* border:solid 10px;
-border-radius:20px; */
+border:solid 10px;
+border-radius:20px; 
 background:white;
 display:flex;
 align-items:center;
